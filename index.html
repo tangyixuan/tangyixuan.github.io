@@ -100,6 +100,45 @@
             margin-bottom: 1rem;
             font-weight: 300;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            :root {
+                --sidebar-width: 100%;
+            }
+            
+            body {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                position: relative;
+                height: auto;
+                width: 100%;
+                padding: 10px;
+            }
+            
+            .sidebar img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .container {
+                margin-left: 0;
+                padding: 20px;
+            }
+            
+            .sidebar nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .sidebar nav a {
+                padding: 5px 10px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -107,11 +146,11 @@
         <h1>Yixuan Tang</h1>
         <img src="./tyx.jpg" alt="Yixuan Tang">
         <nav>
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#services">Services</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#honors">Awards</a>
+            <a href="#about" style="padding-left: 20px;">About</a>
+            <a href="#publications" style="padding-left: 20px;">Publications</a>
+            <a href="#services" style="padding-left: 20px;">Services</a>
+            <a href="#teaching" style="padding-left: 20px;">Teaching</a>
+            <a href="#honors" style="padding-left: 20px;">Awards</a>
         </nav>
     </aside>
     <div class="container">
